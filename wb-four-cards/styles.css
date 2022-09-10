@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+body{
+    background-color: white;
+    height: 922px;
+    color: #A3A5AE;
+    font-weight: 15px;
+}
+h1{
+    font-size: 39px;
+    font-weight: 600;
+    color: #4C4E61;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 39px;
+    font-weight: 200;
+    color: #4C4E61;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+h3{
+    font-weight: 600;
+    color: #4C4E61;
+    font-size: 20px;
+}
+.container{
+    position: relative;
+    height: 190px;
+    font-size: 13px;
+}
+.intro{
+    text-align: center;
+    width: 550px;
+    height: 185px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.card1{
+    margin-right: 30px;
+    box-shadow: 0px 4px 8px #A3A5AE;
+    right: 50%;
+    transform: translate(-50%, 50%);
+    width: 350px;
+    height: 250px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    position: absolute;
+
+    border-radius: 5px;
+    border-top-style: solid;
+    border-top-color: #45D3D3;
+    border-top-width: thick;
+}
+.card2{
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    box-shadow: 0px 4px 8px #A3A5AE;
+    width: 350px;
+    height: 250px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+
+    border-radius: 5px;
+    border-top-style: solid;
+    border-top-color: #EA5353;
+    border-top-width: thick;
+}
+.card3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    box-shadow: 0px 4px 8px #A3A5AE;
+    width: 350px;
+    height: 250px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+
+    border-radius: 5px;
+    border-top-style: solid;
+    border-top-color: #FCAF4A;
+    border-top-width: thick;
+}
+.card4{
+    margin-left: 30px;
+    left: 50%;
+    transform: translate(50%, 50%);
+    box-shadow: 0px 4px 8px #A3A5AE;
+    width: 350px;
+    height: 250px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    float: right;
+
+    border-radius: 5px;
+    border-top-style: solid;
+    border-top-color: #549EF2;
+    border-top-width: thick;
+}
