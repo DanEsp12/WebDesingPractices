@@ -1,0 +1,21 @@
+.block{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+#block_red{
+    background-color: red;
+    float: left;
+    margin-left: 300px;
+}
+#block_blue{
+    background-color: blue;
+    float: left;
+    margin-left: -450px;
+}
+#block_yellow{
+    background-color: yellow;
+    float: left;
+    margin-left: -300px;
+}

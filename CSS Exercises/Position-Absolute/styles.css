@@ -1,0 +1,18 @@
+.block{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+#block_red{
+    background-color: red;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+#block_blue{
+    background-color: blue;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+#block_yellow{
+    background-color: yellow;
+}
