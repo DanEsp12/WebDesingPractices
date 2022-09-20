@@ -1,0 +1,25 @@
+--------PERSONAL PROJECT LOG--------
+
+--------SELF ASSESSMENT--------
+
+I believe that two essential qualities a programmer should have are the ability to
+research in order to complete their projects, and the skill to implement a design
+or plan through their coding. These two characteristics shone during the development
+of this web page. I was able to research by reading throughout Bootstrap's
+documentation and forums such as Stack Overflow in order to code the ideas I had for
+the project. One way or another, I managed to portray what I had in mind, even
+though I had to change the approach several times.
+
+I also believe that a programmer and an engineer should be able to plan before they
+start their project. Plans give the structure for a product or service. If I lacked
+something during the development of this web page, it was planning. Instead of
+desiging my web page as I coded it, developing a layout and distributing the work
+on a longer timeframe would have been an incredible advantage.
+
+--------TEAM WORK--------
+
+I decided to work on this project alone since it would be easier for me to organize my
+time and work. In addition to this, I had more freedom on how to design and code the
+web page. In spite of this advantages, I could have benefited from working in a team:
+my weaknesses could have been covered by my partners and the workload would have been
+much less. 

@@ -1,0 +1,85 @@
+-------DEVELOPMENT LOG-----------
+-------SEPTEMBER 17TH-----------
+*Index page
+	* I started by implementing a navbar on the index page.
+		* It was difficult to adjust the content: one part had to be on the
+		left and another on the right. I tried using "float", but it did not work
+		due to the standard positioning and displayed used by bootstrap.
+		* I solved it by using the grid system
+		* I took advantage of "md" and "none" and coded two alternatives for the
+		right section, depending on the screen size. On small screens, it goes over
+		the rest of the navbar.
+	* I developed the bottom section, which will become standard for every document.
+		*I mainly used the bootstrap list class.
+	* I implemented a carousel with a grid system in order to have a text section and an
+	image.
+	* A section with featured artists was the next step
+		* Several elements of the "card" class from bootstrap were used to organize
+		this section.
+-------SEPTEMBER 18TH-----------
+*Artists page
+	* A page with an accordion as a main element was developed. 4 artist profiles were
+	written for it.
+	* I added the navbar and the bottom section
+	* A title was added and a small description.
+	* The bottom section did reach the bottom part of the page when the accordion was
+	expanded, but not when everything was contracted.
+	* In order to solve this, I had to adjust margins and paddings between elements.
+*Online Gallery
+	* I implemented navbar and bottom section.
+	* It was difficult to settle for a way to organize the gallery. I always had the
+	intention to implement two parts: a "Featured Artworks" and "Other". I considered
+	using a side-scrolling bar and tried to implement it; but settled for two
+	carousels due to their ease of use.
+	*However, the carousels did not look good on low resolutions. I solved this by using
+	the same trick used on the navbar: made some extra carousels that would only
+	show when resolution was lower than "md" and hid the original ones on these
+	cases.
+*Buy
+	* Navbar and bottom section were implemented.
+	* I divided the required information in three: buyer information, credit card
+	and artwork. I used a <form> element with several inputs in order for the user
+	to fill out the corresponding data. 
+	* A dropdown list was added in order for the user to sellect the desired artwork.
+	* A submit button was added.
+*Sell
+	* Navbar and bottom section were added.
+	* The process was similar to the buy page. However, only one section was needed,
+	asking the user for information about the art piece and adding a space for
+	submitting an image of their work.
+*Sign Up/Log In
+	* The page was divided in two sections: sign up and log in. Forms were used to ask
+	the user for information.
+	* Each section had a button which sends the user back to index added. They were labeled
+	"Sign Up" and "Log In".
+*About Us
+	* Added the navbar and bottom section
+	* Wrote the titles and the platform's vision
+	* Added an image below the vision
+	* A contact section was added, providing the user with different e-mails to communicate
+	with the organization.
+	* In order to ease navigation and organize the page in accordance to the bottom section,
+	each segment was given a correspondent id.
+* Support
+	* I inserted the navbar and bottom section.
+	* The page was divided into two: "how to buy" and "how to sell".
+	* I wrote the "how to buy" segment, adding a link to the "buy" page and highlighted the
+	different states an artwork can be in: Up for auction, Not for auction and Auction in
+	Progress.
+	* I wrote the "how to sell" section, adding a link to the "sell" page and another one
+	to the "contact" section in "About Us".
+	* I added the pertinent ids for navigation.
+* Additional Changes
+	* Experimented with different colors for the web page, trying with different tones
+	of blue and yellow; both as primary and secondary color. I settled with yellow as my
+	main color due to it being associated with creativity.
+	* Changed the color of certain elements to blue because it makes a good contrast with
+	yellow.
+	* Made "Submit" buttons green to differentiate them from the rest.
+	* Modified the navbars and bottom sections to allow navigation.
+-------SEPTEMBER 19TH-----------
+* Redesigning About Us
+	* I left the "contact" section mostly the same, I just had to adjust padding.
+	* Readjusted the image size and added rounded borders.
+	* Rearranged the "vision" section, having text and image side by side when resolution
+	is larger than md, otherwise, the image goes under the text.
