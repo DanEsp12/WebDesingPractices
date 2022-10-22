@@ -1,0 +1,44 @@
+<%- include('partials/header_landing.ejs'); %>
+        <div class="d-flex justify-content-around" id="backg">
+            <img src="logo.png" class="img-fluid w-50 mt-4">
+        </div>
+        
+        <form method="post" action="/poke" class="row mt-3 d-flex justify-content-center">
+            <div class = "col-md-5 col-8 p-0 mt-md-5 mt-4">
+                <input type="text" name="searchbar" id="searchbar" class="form-control" placeholder="Enter a Pokémon..." required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-md-5 mt-3 col-md-2 col-lg-1 col-8">Search</button>
+        </form>
+
+        <h4 class="d-flex col-12 justify-content-around mt-5">Gotta catch'em all!</h4>
+        <h5 class="d-flex col-12 justify-content-around mt-2">Search between 904 Pokémon</h5>
+        
+        <hr class="mt-5"/>
+        <h4 class="d-flex col-12 justify-content-around mt-5">Pick your starter</h4>
+        <div class="row mt-5 mb-4 gx-1">
+            <form class="col-4" method="post" action="/grass">
+                <button type="submit" class="card" id="grass-card">
+                    <img src="pokeball.png" class="card-img-top p-md-4 p-2" id="poke-img" alt="pokeball">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-around">Grass Starter</h5>
+                    </div>
+                </button>
+            </form>
+            <form class="col-4" method="post" action="/fire">
+                <button type="submit" class="card" id="fire-card">
+                    <img src="pokeball.png" class="card-img-top p-md-4 p-2" id="poke-img" alt="pokeball">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-around">Fire Starter</h5>
+                    </div>
+                </button>
+            </form>
+            <form class="col-4" method="post" action="/water">
+                <button type="submit" class="card" id="water-card">
+                    <img src="pokeball.png" class="card-img-top p-md-4 p-2" id="poke-img" alt="pokeball">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-around">Water Starter</h5>
+                    </div>
+                </button>
+            </form>
+        </div>
+<%- include('partials/footer.ejs'); %>

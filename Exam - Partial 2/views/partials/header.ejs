@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokédex</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="icon" href="home.png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <form class="navbar-brand" href="#" method="get" action="/">
+                    <button class="form-control bg-transparent border-0 p-0 mx-0" type="submit">
+                        <img src="home.png" alt="Home Button" width="45" height="45">
+                    </button>
+                </form>
+                <form class="d-flex" role="search" method="post" action="/poke">
+                    <input class="form-control me-2" type="search" placeholder="Enter a Pokémon..." aria-label="Search" name="searchbar" id="searchbar" required>
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container" id="backg">

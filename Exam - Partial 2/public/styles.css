@@ -1,0 +1,73 @@
+.navbar{
+    background-color: #b00b13;
+}
+.btn-primary{
+    background-color: #4f86c4 !important;
+    border-color: #113d85 !important;
+}
+.btn-primary:hover{
+    background-color: #1e4673 !important;
+    border-color: #113d85 !important;
+}
+.progress-bar{
+    background-color: #00ccff !important;
+}
+.accordion-item{
+    background-color: #747474 !important;
+    color: white !important;
+    border-style: none !important;
+}
+.accordion-button{
+    background-color: #b00b13 !important;
+    color: white !important;
+}
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+:focus{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+#water-card{
+    background-color: #6697a5 !important;
+}
+#water-card:hover{
+    background-color: #85def4 !important;
+}
+#fire-card{
+    background-color: #b5805b !important;
+}
+#fire-card:hover{
+    background-color: #ffa25f !important;
+}
+#grass-card{
+    background-color: #61905d !important;
+}
+#grass-card:hover{
+    background-color: #7df572 !important;
+}
+#poke-img{
+    filter: brightness(50%);
+}
+#poke-img:hover{
+    filter: brightness(100%);
+}
+#sprite{
+    background-color: #747474;
+    border-radius: 7%;
+    image-rendering: pixelated;
+}
+#type_tag{
+    border-radius: 2%;
+}
+body{
+    background-color: #292929 !important;
+    color: white !important;
+}
+ul{
+    list-style-image: url("icon.ico");
+}
+li{
+
+    padding-left: 1px !important;
+}

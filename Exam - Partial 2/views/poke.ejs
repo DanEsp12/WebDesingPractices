@@ -1,0 +1,77 @@
+<%- include('partials/header.ejs'); %>
+        <div class="row mt-4 mx-auto">
+            <img id="sprite" src="<%= img_url %>" class="col-md-5 col-9 mx-auto"/>
+            <div class="col-md-7 col-12">
+                <h1 class="col-12 d-flex justify-content-around mt-3"><%= name %></h1>
+                <div class="row d-flex justify-content-around px-5 mt-4">
+                    <div class="col-6 d-flex justify-content-around" style="text-align:center;">
+                        <div class="row d-flex justify-content-around">
+                            <h2 class="col-12"><%= weight %> KG</h2>
+                            <h6 class="col-12">Weight</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-around" style="text-align:center;">
+                        <div class="row d-flex justify-content-around">
+                            <h2 class="col-12"><%= height %> M</h2>
+                            <h6 class="col-12">Height</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-2 px-5">
+                    <% types.forEach(function(type){ %>
+                        <div class="col-5 d-flex justify-content-around mt-3 mx-1 p-1 mb-2" style="background-color: <%= type_color[type] %>;" id="type_tag">
+                            <%= type%>
+                        </div>
+                    <% }) %>
+                </div>
+                <div class="row d-flex justify-content-center mt-4 mx-5">
+                    <hr/>
+                    <h4 class="col-4 mt-2 d-lg-block d-none">Base Experience</h4>
+                    <h6 class="col-4 mt-2 d-lg-none d-block p-0">Base Experience</h6>
+                    <div class="progress col-8 p-0 mt-lg-4 mt-md-3 mt-sm-2 mt-4">
+                        <div class="progress-bar" role="progressbar" style="width: <%= xp_100 %>%;" aria-label="xp with label" aria-valuenow="<%= base_xp %>" aria-valuemin="0" aria-valuemax="635"><%= base_xp %></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-4 mx-5">
+                    <h4 class="col-4 mt-2 d-lg-block d-none">Abilities</h4>
+                    <h6 class="col-4 mt-3 d-lg-none d-block p-0">Abilities</h6>
+                    <div class="col-8 p-0">
+                        <div class="row d-flex justify-content-center">
+                            <% abilities.forEach(function(ability){ %>
+                                <div class="col-5 mx-auto mt-2 p-1" style="background-color: #b0a2a0; text-align: center; border-radius: 4%;">
+                                    <%= ability%>
+                                </div>
+                            <% }) %>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around mt-4 mx-5">
+                    <form class="col-6 mx-auto mt-2 p-lg-1 p-1" style="text-align: center;" method="post" action="/prev">
+                        <button type="submit" class="btn btn-lg btn-light w-100 h-15">Previous</button>
+                    </form>
+                    <form class="col-6 mx-auto mt-2 p-lg-1 p-1" style="text-align: center;" method="post" action="/next">
+                        <button type="submit" class="btn btn-lg btn-light w-100 h-15">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mt-4 col-md-12 col-9 mx-auto mb-4" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h4>Moves</h4>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul class="row">
+                        <% moves.forEach(function(move){ %>
+                            <li class="col-6 col-md-3"><%= move%></li>
+                        <% }) %> 
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+<%- include('partials/footer.ejs'); %>
