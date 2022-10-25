@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs'); %>
+        <h2 class="title">
+        <span class="title-word title-word-1">Every</span>
+        <span class="title-word title-word-2">Random</span>
+        <span class="title-word title-word-3">Cool</span>
+        <span class="title-word title-word-4">Post</span>
+        </h2>
+        <form action="/new" method="get" class="fixed-bottom fixed-right mb-3 mx-md-5 mx-2 px-md-5">
+            <button type="submit" class="btn btn-success px-4" id="fixedForm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+              </svg>  New post
+            </button>
+        </form>
+        <% posts.forEach(function(post){ %>
+            <div class = "row mx-2 py-1 w-100">
+                <div class="card col-12 py-2" style="text-align: justify;" id="cont-block">
+                    <img src="<%= post["Img"] %>" class="card-img-top imgfx" alt="Blog Picture">
+                        <div class="card-body">
+                            <h4 class="card-title"><%= post["Title"] %></h4>
+                            <h5 class="card-title"><%= post["Author_name"] %></h5>
+                            <p class="card-text">
+                            <% if(post["Content"].length > 300){ %>
+                                <%= post["Content"].substring(0, 300) + "..." %>
+                            <% } else { %>
+                                <%= post["Content"] %>
+                            <% } %>
+                            </p>
+                            <div class="row mt-4">
+                                <form class="col-6" method="post" action="/blog">
+                                    <input type="text" name="searchbar" id="searchbar" class="form-control d-none" value="<%= post["Title"] %>" readonly="readonly">
+                                    <button type="submit" class="btn btn-primary form-control hover-underline-animation">Read</button>
+                                </form>
+                                <form class="col-6" method="post" action="/edit">
+                                    <input type="text" name="searchbar" id="searchbar" class="form-control d-none" value="<%= post["Title"] %>" readonly="readonly">
+                                    <button type="submit" class="btn btn-primary form-control hover-underline-animation">Edit</button>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <% }) %>
+<%- include('partials/footer.ejs'); %>

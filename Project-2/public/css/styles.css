@@ -1,0 +1,179 @@
+/* FONTS
+  -------------------------------------------------- */
+
+  @import url('http://fonts.cdnfonts.com/css/lovelyn');
+
+  @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    background-color: #e6edf5 !important;
+}
+p{
+    font-family: 'Leelawadee', sans-serif;
+    font-size: 1.2rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lovelyn', sans-serif;
+    font-weight: bold !important;
+}
+.hover-underline-animation {
+display: inline-block;
+position: relative;
+color: #1CA67F;
+}
+
+.hover-underline-animation:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #2980F2;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+.navbar-art{
+font-family: 'Lovelyn', sans-serif;  
+font-size: large;                       
+font-weight: bold;    
+background-color: #1C58A6;
+}
+
+.navbar-art a{
+    color: #F2F2F2 !important;
+}
+
+/* TITLE */
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+  
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+  
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+  
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+  
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+  }
+  
+  .title {
+    font-family: 'Lovelyn', sans-serif;  
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+
+/* END TITLE */
+
+.mr-1{
+margin-right: 20px;
+}
+
+.imgfx{
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.btn-success{
+    background-color: black !important;
+    color: #fffae9 !important;
+    border-color: black !important;
+}
+
+.btn-success:hover{
+    background-color: rgb(94, 94, 90) !important;
+    border-color: #939671 !important;
+
+}
+
+.btn-primary{
+    background-color: #00000000 !important;
+    border-color: #00000000 !important;
+    color: #F2F2F2 !important;
+    padding: 0% !important;
+    font-family: 'Lovelyn', sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+.btn-primary:hover{
+    background-color: #385784 !important;
+}
+.btn-primary:active{
+    border-color: #00000000 !important;
+    outline-color: #00000000 !important;
+}
+
+#cont-block{
+    color:#F2F2F2;
+    background-color: #032963;
+    text-align: justify;
+    word-break: break-word;
+}
+#blog-title{
+    text-align: center;
+}
+#block-header{
+    background-color: black;
+    text-align: center;
+    color: #edf5fe;
+    padding: 2px;
+}
+#fixedForm{
+    float: right !important;
+}
+.navbar-brand{
+    margin-left: 25px;
+}

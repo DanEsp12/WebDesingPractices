@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs'); %>
+    <form id="cont-block" class="mt-4 p-3" method="post" action="/commit" enctype="multipart/form-data">
+        <h2>Blog Post</h2>
+        <div class="mb-3">
+            <label for="bTitle" class="form-label mt-2">Title</label>
+            <input type="text" class="form-control" id="bTitle" name="bTitle" value="<%- post["Title"] %>" required>
+        </div>
+        <div class="mb-3">
+            <label for="bContent" class="form-label">Post (HTML)</label>
+            <textarea type="text" class="form-control" id="bContent" name="bContent" rows="10" required><%- post["Content"] %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="bImg" class="form-label">Image</label>
+            <input class="form-control" type="file" name="img" accept="image/*" required/>
+        </div>
+
+        <h2>Author</h2>
+        <div class="mb-3">
+            <label for="aName" class="form-label mt-2">Name</label>
+            <input type="text" class="form-control" id="aName" name="aName" value="<%- post["Author_name"] %>" required>
+        </div>
+        <div class="mb-3">
+            <label for="aAbout" class="form-label">About me</label>
+            <textarea type="text" class="form-control" id="aAbout" name="aAbout" rows="2" required><%- post["Author_abt"] %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="aImg" class="form-label">Image</label>
+            <input class="form-control" type="file" name="aImg" accept="image/*" required/>
+        </div>
+        <button type="submit" class="btn btn-primary form-control hover-underline-animation">Commit changes</button>
+    </form>
+<%- include('partials/footer.ejs'); %>
